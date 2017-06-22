@@ -111,17 +111,31 @@
 ## TravisCI Configuration
 
 * Only allow commits on master branch and PR to trigger build
-  ```branches:
-  only:
-    - master```
+
+
+  `branches:
+
+     only:
+
+      - master`
+      
+      
 * Add build spets in .travis.yml
-  ```script:
-  - npm run cover
-  - npm run check-coverage
-  - npm run build
-after_success:
-  - npm run report-coverage
-  - npm run semantic-release```
+
+
+  `script:
+
+    - npm run cover
+
+    - npm run check-coverage
+
+    - npm run build
+
+    after_success:
+
+     - npm run report-coverage
+
+     - npm run semantic-release`
   
 
 
