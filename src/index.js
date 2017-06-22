@@ -1,6 +1,6 @@
 "use strict";
-const starWarsName = require("./starwars-names.json");
-const uniqueRandomArray = require("unique-random-array");
+import starWarsName from "./starwars-names.json";
+import uniqueRandomArray from "unique-random-array";
 const getRandomItem = uniqueRandomArray(starWarsName);
 
 const random = number => {

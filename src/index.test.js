@@ -1,6 +1,6 @@
 "use strict";
-const expect = require("chai").expect;
-const starwars = require("./index");
+import { expect } from "chai";
+import starwars from "./index";
 
 describe("starwars-names-generator", () => {
   describe("all", () => {
