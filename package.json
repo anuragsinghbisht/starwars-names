@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha src/index.test.js",
+    "test": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
     "test:watch": "mocha src/index.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -31,6 +31,7 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "ghooks": "^2.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "semantic-release": "^6.3.6"
   },
